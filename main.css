@@ -294,3 +294,8 @@ a:visited {
   background-color: #ffffff3a;
   border-radius: 8px;
 }
+
+.text-btn {
+  position: relative;
+  top: -10%;
+}
