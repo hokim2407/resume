@@ -14,63 +14,72 @@
     <title>hokim's resume</title>
   </head>
   <body>
-    <div id="head">
-      <div id="title">hokim</div>
-      <div id="title-link">
-        <a class="link-item" href="./index.html">소개</a>
-        <a class="link-item" href="./portfolio.html">포트폴리오</a>
-        <a class="link-item selected" href="./career.html">경력</a>
+    <div class="full back-6 back">
+      <div class="inner-pull">
+        <div class="text-b1">직무 경험</div>
+        <div class="text-b2" style="margin: 0.5rem 0">
+          차차 늘려나갈 예정입니다 :)<br />
+        </div>
+        <div class="scroll-box"></div>
       </div>
-    </div>
-	
-
-	  <div class="full back-6 back">
-		  <div class="inner-pull">
-		  	<div class="text-b1"> 직무 경험</div>
-		  	<div class="text-b2"  style='margin-top: .5rem'> 
-          차차 늘려나갈 예정입니다 :)
-          <br/>
-  
-            <div id="content" class="content">
-
-            </div>
-      
     </div>
   </body>
 
-
-<script>
-
-  const inputData = (title, content) => {
-    return `
+  <script src="./header.js"></script>
+  <script>
+    addHeader(3);
+  </script>
+  <script>
+    const inputData = (title, content, type = 1) => {
+      return `
       <div class='small-text-box'>  
-        <div class="text-b2-5">💼 ${title}</div>
+        <div class="text-b2">
+          ${type == 1 ? "💼" : "✏️"}
+           ${title}</div>
         <p class="text-r2 gray" style='margin-top: .5rem;'>
           ${content}
         </p>
+        <br/>
       </div>
     `;
-  };
-  
-  const container = document.getElementsByClassName("content")[0];
+    };
 
-
-	container.insertAdjacentHTML(
-	"beforeend",
-		inputData('yourwish',
-		`
-    - 8주 간의 인턴생활 (2021-10-01 ~ 2021-11-31)<br/>
+    const container = document.getElementsByClassName("scroll-box")[0];
+    container.insertAdjacentHTML(
+      "beforeend",
+      inputData(
+        "yourwish 인턴",
+        `
+    - 8주 간의 인턴 생활 (2021-10-01 ~ 2021-11-31)<br/>
 		- 백엔드/프론트엔드 + 코틀린 웹뷰<br/>
     - nodejs(express, mysql, sequlize), react를 사용했습니다.<br/>
     - naver cloud로 서버를 띄웠어요.<br/>
     - 엑셀로 작성한 테이블 정의서를 바탕으로 모델파일과 마이그레이션 파일을 <br/>
     &nbsp;&nbsp; 생성해주는 파이선 프로그램을 구현했습니다.
-		` )
+		`
+      )
+    );
 
-		 )
-
-
-
-</script>
-
+    container.insertAdjacentHTML(
+      "beforeend",
+      inputData(
+        "HackaLearn",
+        `
+        - 2주 간의 해커톤 참가(2021-08-02 ~ 2021-08-16)<br/>
+        - 해커런이란 주어진 기간 안에 관련 지식을 직접 배워서 해커톤에 적용하는 이벤트입니다.<br/>
+        - 애저 정적 웹과 깃 액션에 대해 배웠어요.<br/>
+        - 저희 팀의 결과물은 
+          <a href="https://github.com/hokim2407/RefrigeratorInMyHand">
+          깃허브 저장소 (https://github.com/hokim2407/RefrigeratorInMyHand)
+          <a/> 에서 확인하실 수 있습니다.<br/>
+        - 블로그 후기 상을 받았어요. <br/>
+          &nbsp;&nbsp;해당 글은 
+          <a href="https://velog.io/@hokim/HackaLearn-참여-후기-팀오므-라이스">
+            저의 개인 블로그 (https://velog.io/@hokim/HackaLearn-참여-후기-팀오므-라이스)
+          <a/>에서 보실 수 있습니다.
+        `,
+        2
+      )
+    );
+  </script>
 </html>
