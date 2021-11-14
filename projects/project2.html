@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../portfolio.css" />
+    <title>hokim's resume</title>
+  </head>
+  <body>
+    <div id="head">
+      <div id="title">hokim</div>
+      <div id="title-link">
+        <a class="link-item" href="../index.html">소개</a>
+        <a class="link-item selected" href="../portfolio.html">포트폴리오</a>
+        <a class="link-item" href="../career.html">경력</a>
+      </div>
+    </div>
+
+    <div class="full back-3 back" style="background-attachment: fixed;">
+      <div class="inner-pull">
+        <div class="text-b1 fit-bottom-box">Saver
+			&nbsp;&nbsp;
+          <img class="icon" src="../images/icon/js.png"/>
+          <img class="icon" src="../images/icon/kotlin.png"/>
+          <img class="icon" src="../images/icon/sequelize.png"/>
+          <img class="icon" src="../images/icon/ejs.png"/> 
+          <img class="icon" src="../images/icon/github.png"/> 
+		</div>
+        <div class="text-b2" style="margin-top: 0.5rem">
+         웹과 앱, 프론트엔드와 백엔드 한번에 맛보기
+		  <br />
+        </div>
+        <div class="text-r3 gray">
+          깃허브:
+          <a href="https://github.com/innovationacademy-kr/slabs-saver">
+            https://github.com/innovationacademy-kr/slabs-saver
+            </a>
+        </div>
+
+        <div class="small-text-box"></div>
+    </div>
+  </body>
+
+
+  <script src="./inputData.js">
+  </script>
+  <script>
+	container.insertAdjacentHTML(
+	"beforeend",
+		inputData('파이어베이스 연동',
+		`
+		- 파이어베이스의 클라우드 메세징 기능을 이용해 웹에서 사용자에게 <br/>
+      &nbsp;&nbsp;푸시 알림을 보낼 수 있도록 하였습니다.<br/>
+    - 안드로이드 앱 쪽에서 파이어베이스의 클라우드 메세지를 받는 기능을 작성하고,<br/>
+      &nbsp;&nbsp;받은 메세지에 맞게 푸시 알림을 구성해 사용자의 스마트폰에 띄우도록 했습니다.<br/>
+		- 웹에서 어드민 페이지에 접속했을 때 파이어베이스를 통해 클라우드 메세지를 보내는 기능과 <br/>
+      &nbsp;&nbsp;내용을 작성하는 페이지를 구현했습니다.
+
+		` )
+		+inputData('북마크',
+		`
+     - 글 하단의 북마크 버튼을 누르면 북마크를 활성화/비활성화 하는 기능을 구현했습니다.<br/>
+     - 이전 기수에서 구현해놓은 데이터베이스에서 연관관계가 잘못된 부분이 있어 데이터베이스에 직접 접속해<br/>
+      &nbsp;&nbsp;해당 관계를 지우고 올바른 관계를 적용시켰습니다.<br/>
+     - 북마크 목록을 무한 스크롤로 볼 수 있고 슬라이드 하여 삭제하는 기능을 구현하였습니다.<br/>
+		`)
+
+	);
+  </script>
+</html>

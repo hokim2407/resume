@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
+    <title>hokim's resume</title>
+  </head>
+  <body>
+    <div id="head">
+      <div id="title">hokim</div>
+      <div id="title-link">
+        <a class="link-item" href="./index.html">소개</a>
+        <a class="link-item" href="./portfolio.html">포트폴리오</a>
+        <a class="link-item selected" href="./career.html">경력</a>
+      </div>
+    </div>
+	
+
+	  <div class="full back-3 back">
+		  <div class="inner-pull">
+		  	<div class="text-b1"> 직무 경험</div>
+		  	<div class="text-b2"  style='margin-top: .5rem'> 
+          차차 늘려나갈 예정입니다 :)
+          <br/>
+  
+            <div id="content" class="content">
+
+            </div>
+      
+    </div>
+  </body>
+
+
+<script>
+
+  const inputData = (title, content) => {
+    return `
+      <div class='small-text-box'>  
+        <div class="text-b2-5">💼 ${title}</div>
+        <p class="text-r2 gray" style='margin-top: .5rem;'>
+          ${content}
+        </p>
+      </div>
+    `;
+  };
+  
+  const container = document.getElementsByClassName("content")[0];
+
+
+	container.insertAdjacentHTML(
+	"beforeend",
+		inputData('yourwish',
+		`
+    - 8주 간의 인턴생활 (2021-10-01 ~ 2021-11-31)<br/>
+		- 백엔드/프론트엔드 + 코틀린 웹뷰<br/>
+    - nodejs(express, mysql, sequlize), react를 사용했습니다.<br/>
+    - naver cloud로 서버를 띄웠어요.<br/>
+    - 엑셀로 작성한 테이블 정의서를 바탕으로 모델파일과 마이그레이션 파일을 <br/>
+    &nbsp;&nbsp; 생성해주는 파이선 프로그램을 구현했습니다.
+		` )
+
+		 )
+
+
+
+</script>
+
+</html>

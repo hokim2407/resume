@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../portfolio.css" />
+    <title>hokim's resume</title>
+  </head>
+  <body>
+    <div id="head">
+      <div id="title">hokim</div>
+      <div id="title-link">
+        <a class="link-item" href="../index.html">소개</a>
+        <a class="link-item selected" href="../portfolio.html">포트폴리오</a>
+        <a class="link-item" href="../career.html">경력</a>
+      </div>
+    </div>
+
+    <div class="full back-3 back">
+      <div class="inner-pull">
+        <div class="text-b1 fit-bottom-box">Maching42&nbsp;&nbsp;
+          <img class="icon" src="../images/icon/ts.png"/>
+          <img class="icon" src="../images/icon/mongodb.png"/>
+          <img class="icon" src="../images/icon/mongoose.png"/>
+          <img class="icon" src="../images/icon/github.png"/>
+        </div>
+        <div class="text-b2" style="margin-top: 0.5rem">
+          첫 웹개발 프로젝트<br />
+        </div>
+        <div class="text-r3 gray">
+          깃허브:
+          <a href="https://github.com/Matching42/Matching42-back">
+            https://github.com/Matching42/Matching42-back
+            </a>
+        </div>
+
+        <div class="small-text-box"></div>
+    </div>
+  </body>
+
+
+  <script src="./inputData.js">
+  </script>
+  <script>
+	container.insertAdjacentHTML(
+	"beforeend",
+		inputData('자바스크립트 스터디',
+		`
+      웹개발을 처음 하는 팀원들과 함께 진행한 자바스크립트 스터디입니다.<br/>
+      브라우저의 동작 원리, web API, 일급객체와 콜백, 스코프와 클로저, 이벤트루프에 대해 학습했습니다.
+
+      <div class="text-r3 gray" > 깃허브:
+        <a href="https://github.com/Matching42/study-js">
+          https://github.com/Matching42/study-js
+        </a>
+      </div>
+		` )
+		+inputData('팀 정보 수정 API',
+		`
+			팀의 정보를 수정하는 API를 작성했습니다.<br/>
+			mongoose를 이용해 mongoDB에 접근하고 데이터를 수정하는 방법을 배웠습니다.<br/>
+		`)
+		+inputData('깃허브 API를 이용한 깃 저장소 생성/초대 자동화',
+		`
+			외부 API를 이용하는 방법을 배웠습니다.<br/>
+			github에서 발급받은 토큰으로 접근해 깃 저장소를 생성하고,<br/>
+			유저를 검색해 초대하는 API를 작성했습니다.<br/>
+		`)
+		+inputData('직접 만든 스케줄러',
+		`
+			한국기준 특정 시간부터 특정 주기로 동작하게 하는 스케줄러를 구현했습니다.<br/>
+			setTimeout을 이용해 원하는 시간에 원하는 동작을 하게 하고<br/>
+			클로저를 이용해 스케줄러를 멈추는 함수를 반환하도록 설계했습니다.<br/>
+		`
+		 )
+	);
+  </script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../portfolio.css" />
+    <title>hokim's resume</title>
+  </head>
+  <body>
+    <div id="head">
+      <div id="title">hokim</div>
+      <div id="title-link">
+        <a class="link-item" href="../index.html">소개</a>
+        <a class="link-item selected" href="../portfolio.html">포트폴리오</a>
+        <a class="link-item" href="../career.html">경력</a>
+      </div>
+    </div>
+
+    <div class="full back-3 back">
+      <div class="inner-pull">
+        <div class="text-b1 fit-bottom-box">Gifty
+			&nbsp;&nbsp;
+          <img class="icon" src="../images/icon/js.png"/>
+          <img class="icon" src="../images/icon/mysql.png"/>
+          <img class="icon" src="../images/icon/sequelize.png"/>
+          <img class="icon" src="../images/icon/ejs.png"/> 
+          <img class="icon" src="../images/icon/github.png"/> 
+		</div>
+        <div class="text-b2" style="margin-top: 0.5rem">
+          온전히 내 손으로 만든 Gifty 백엔드
+		  <br />
+        </div>
+        <div class="text-r3 gray">
+			깃허브:
+			<a href="https://github.com/42seoul-gifty/backend-hokim">
+				https://github.com/42seoul-gifty/backend-hokim
+			</a>
+        </div>
+
+        <div class="small-text-box"></div>
+    </div>
+  </body>
+
+
+  <script src="./inputData.js">
+  </script>
+  <script>
+	container.insertAdjacentHTML(
+	"beforeend",
+		inputData('.',
+		`
+		.
+		` )
+	);
+  </script>
+</html>
