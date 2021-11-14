@@ -4,7 +4,7 @@ const make42 = (title, content) => {
   return `
   	<div class='small-text-box'>  
 		<div class="text-b2-5"  style='margin: .8rem 0 0.5rem 0;'>📌 ${title}</div>
-		<p class="text-r2" style='line-height:2rem;'>
+		<p class="text-r2 gray" style='line-height:2rem;'>
 			${content}<br/>
 		</p>
 	</div>
@@ -48,20 +48,20 @@ full_container.insertAdjacentHTML(
     `	
 		<div class='small-text-box'>
 		<br/>
-			<a href="https://42place.innovationacademy.kr/" class="text-r3 gray">
+			<a href="https://42place.innovationacademy.kr/" class="text-r3 light-gray">
 			42 블로그 보러 가기
 			</a>
-			<div class="text-r3 short">42 서울에서 운영하는 블로그에는 프로젝트 후기나 멘토 혹은 다른 카뎃분들의 꿀팁이 많이 올라와요.</br>
+			<div class="text-r3 short gray">42 서울에서 운영하는 블로그에는 프로젝트 후기나 멘토 혹은 다른 카뎃분들의 꿀팁이 많이 올라와요.</br>
 			<a href="https://42place.innovationacademy.kr/archives/9344" class="text-r3 underline">
 				제가 쓴 글
 			</a>도 있으니 많이 봐주세요.
 			</div>
 		</div>
 		<div class='small-text-box'>
-			<a href="https://www.youtube.com/watch?v=zqpfKTDoWAg" class="text-r3 gray">
+			<a href="https://www.youtube.com/watch?v=zqpfKTDoWAg" class="text-r3 light-gray">
 				42유월 영상 보러 가기
 			</a>
-			<div class="text-r3 short">42 서울에서 댄스 영화 유월을 오마주해 만든 영상도 있답니다.</br>
+			<div class="text-r3 short gray">42 서울에서 댄스 영화 유월을 오마주해 만든 영상도 있답니다.</br>
 			저도 1초 정도 등장해요!</div>
 		</div>
 	</div>
