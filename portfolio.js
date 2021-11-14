@@ -55,3 +55,19 @@ function moveWheel(event) {
 }
 
 view.onwheel = moveWheel;
+
+const elementBox = Array.from(document.querySelectorAll(".element-box"));
+
+elementBox.forEach((e, i) => {
+  const text = e.getElementsByClassName("change-visibility")[0];
+
+  e.addEventListener("mouseover", () => {
+    console.log("in " + i);
+    text.classList.remove("invisible");
+  });
+
+  e.addEventListener("mouseleave", () => {
+    console.log("out" + i);
+    text.classList.add("invisible");
+  });
+});

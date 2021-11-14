@@ -33,7 +33,7 @@ full_container.insertAdjacentHTML(
 						&#128150; 저는 이런 것을 좋아합니다.
 					</div>
 					<div class="text-r2 long" > 
-						- CI/CD<br/>
+						- CI/CD를 통한 테스트/자동 배포<br/>
 						- 효율적인 코드를 위한 리팩토링<br/>
 						- 반복 작업 자동화<br/>
 						- 새로운 언어/프레임워크 배우기<br/>

@@ -3,8 +3,8 @@ i = 2;
 const make42 = (title, content) => {
   return `
   	<div class='small-text-box'>  
-		<div class="text-b2-5">📌 ${title}</div>
-		<p class="text-r2" style='margin-top: .5rem;'>
+		<div class="text-b2-5"  style='margin: .8rem 0 0.5rem 0;'>📌 ${title}</div>
+		<p class="text-r2" style='line-height:2rem;'>
 			${content}<br/>
 		</p>
 	</div>
@@ -19,9 +19,10 @@ full_container.insertAdjacentHTML(
 		<div class="text-b1">
 			42 서울의 개발자
 		</div>
-		<div class="text-b2"  style='margin-top: 2rem'> 
+		<div class="text-b2"  style='margin-top: 2rem; margin-bottom: 1rem;'> 
 		c로 쌓아 올린 기초
 		</div>
+		<div class = "scroll-box short" >
 	` +
     make42(
       "헤더? 헤더!",
@@ -63,6 +64,8 @@ full_container.insertAdjacentHTML(
 			<div class="text-r3 short">42 서울에서 댄스 영화 유월을 오마주해 만든 영상도 있답니다.</br>
 			저도 1초 정도 등장해요!</div>
 		</div>
+	</div>
+	
 	</div>
 	  `
 );

@@ -19,6 +19,11 @@ const addPageToContainer = (title, term, summary, content, i) => {
 			<div class="text-r2 gray"></br>
 				${content}
 			</div>
+			
+			<div class="text-r1 light-gray right invisible change-visibility" >
+				</br></br>
+				눌러서 자세히 보기
+			</div>
 		  </div>
 		</div>
 	  `

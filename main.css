@@ -1,6 +1,8 @@
 html {
   /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
   font-family: "Roboto", "Noto Sans KR", sans-serif;
+  background-attachment: fixed;
+  min-height: max(100vh, 100%);
 }
 
 @font-face {
@@ -141,6 +143,12 @@ a:visited {
 .back-3 {
   background-image: url("./images/port0.png");
 }
+.back-4 {
+  background-image: url("./images/back4.jpg");
+}
+.back-6 {
+  background-image: url("./images/back6.jpg");
+}
 
 /*text size*/
 .gray {
@@ -250,4 +258,38 @@ a:visited {
 .fit-bottom-box {
   display: flex;
   align-items: flex-end;
+}
+
+.change-visibility.invisible {
+  color: transparent;
+}
+
+.light-gray {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.change-visibility {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.scroll-box {
+  height: calc(100vh - 17rem);
+  overflow-y: auto;
+}
+
+.scroll-box.short {
+  height: calc(100vh - 22rem);
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* scrollbar itself */
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #ffffff3a;
+  border-radius: 8px;
 }
