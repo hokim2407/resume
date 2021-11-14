@@ -33,10 +33,10 @@
     const inputData = (title, content, type = 1) => {
       return `
       <div class='small-text-box'>  
-        <div class="text-b2">
+        <div class="text-b2"  style='margin: 1.5rem 0 .5rem 0;'>
           ${type == 1 ? "💼" : "✏️"}
            ${title}</div>
-        <p class="text-r2 gray" style='margin-top: .5rem;'>
+        <p class="text-r2 gray">
           ${content}
         </p>
         <br/>
@@ -57,6 +57,23 @@
     - 엑셀로 작성한 테이블 정의서를 바탕으로 모델파일과 마이그레이션 파일을 <br/>
     &nbsp;&nbsp; 생성해주는 파이선 프로그램을 구현했습니다.
 		`
+      )
+    );
+
+    container.insertAdjacentHTML(
+      "beforeend",
+      inputData(
+        "2021 오픈소스 컨트리뷰톤",
+        `
+        - 2021 오픈소스 컨트리뷰톤 참가(2021-08-06 ~ )<br/>
+        - Kicad 전자설계 프로그램 한글화에 참가했습니다.<br/>
+        - <a href="https://hosted.weblate.org/projects/kicad/master-source/ko/">마스터소스
+          (https://hosted.weblate.org/projects/kicad/master-source/ko)<a/>를
+          통해 번역 활동을 했어요.<br/>
+        - 약 천개의 문자를 번역했습니다.<br/>
+        - Kicad를 우분투에서 컴파일하여 번역 상태를 확인했어요.<br/>
+        `,
+        2
       )
     );
 
